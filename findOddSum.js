@@ -1,20 +1,21 @@
 
-// function getSumOfArray(numbers){
-// 
-    // let sum = 0;
-    // for(let i=0; i< numbers.length; i++){
-        // const index = i;
-        // const element = numbers[index];
-        // sum = sum + element;
+function getSumOfArray(numbers){
+
+    let sum = 0;
+    for(let i=0; i< numbers.length; i++){
+        const index = i;
+        const element = numbers[index];
+        sum = sum + element;
         // console.log(index, element, sum);
-    // }
-    // return sum;
-// }
-// 
+    }
+    return sum;
+}
+
 // const myNumbers = [12, 56, 37, 12, 55, 23]
 // getSumOfArray(myNumbers)
 
-function getOddSumOfArray(numbers){
+
+function getOddNumbersOfArray(numbers){
     const oddNumbers = [];
     for( let i = 0; i<numbers.length; i++){
         const index = i;
@@ -29,6 +30,9 @@ function getOddSumOfArray(numbers){
 }
 
 
-const mynumbers = [243, 34, 43, 95, 84, 30, 39];
-const oddNumbers = getOddSumOfArray(mynumbers);
-console.log(oddNumbers)
+const myNumbers = [243, 34, 43, 95, 84, 30, 39];
+const oddNumbers = getOddNumbersOfArray(myNumbers);
+console.log(oddNumbers);
+
+const oddSum = getSumOfArray(oddNumbers)
+console.log(oddSum)
